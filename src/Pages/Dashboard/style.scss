@@ -1,0 +1,21 @@
+.user-dashboard {
+  .wrap {
+    .dashboard-grid {
+      width: 100%;
+      .grid-item {
+        height: 260px;
+        width: 100%;
+        padding: 50px;
+        background-image: url("../../../public/images/dashboard-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include media("<=phoneH") {
+        }
+      }
+    }
+    .ref-link-box {
+      background: linear-gradient(91.81deg, #f5d93a 1.96%, #0e0f14 101.64%);
+    }
+  }
+}

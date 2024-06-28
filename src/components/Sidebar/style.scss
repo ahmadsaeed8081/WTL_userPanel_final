@@ -1,0 +1,110 @@
+// Side Bar
+.sidebar-s {
+  z-index: 99999;
+  width: $pageWidth65;
+  height: 100%;
+  inset: 0;
+  overflow: hidden;
+  @include anim;
+  &.full-open {
+    width: $pageWidth;
+  }
+  @include media("<=tablet") {
+    display: none;
+  }
+  .side-block {
+    width: $pageWidth65;
+    background-color: #0e0f14;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    @include anim;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    @include media(">=phone", "<=480px") {
+      width: 70%;
+    }
+
+    &.full-open {
+      left: 0;
+      width: $pageWidth;
+
+      .body {
+        overflow-y: hidden;
+      }
+    }
+
+    .hdr {
+      min-height: 99px;
+      padding: 8px 10px;
+      width: 100%;
+    }
+
+    .items {
+      padding-top: 20px;
+      margin: 0 6px;
+
+      .list-items {
+        width: 100%;
+
+        cursor: pointer;
+        svg {
+          height: 14px;
+          width: 14px;
+        }
+
+        .li {
+          width: 100%;
+
+          @include media("<=tablet") {
+          }
+        }
+
+        &:hover,
+        &.active {
+          @include anim;
+
+          svg {
+            path {
+              fill: $themeColor;
+            }
+          }
+
+          .li {
+            color: #5c5c5c;
+          }
+        }
+
+        // &:first-child {
+        //   background: transparent;
+        // }
+      }
+    }
+
+    .sidebar-footer {
+      padding: 14px;
+      width: 100%;
+
+      .action {
+        .btn {
+          padding: 8px 18px;
+          background: #f1f1f1;
+          border-radius: 30px;
+
+          .btn-lbl {
+            margin-left: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

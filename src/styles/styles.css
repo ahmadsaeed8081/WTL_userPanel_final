@@ -1,0 +1,13 @@
+/* Swiper styles */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* height: 120px; */
+  /* height: 70vh; */
+}
+
+.swap-dropdown {
+  background: #f5d93a;
+  border-radius: 6px 0 6px 0;
+}

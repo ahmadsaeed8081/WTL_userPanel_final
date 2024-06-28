@@ -1,0 +1,19 @@
+.private-selling-page {
+    .wrap {
+        .selling-grid {
+            width: 100%;
+
+            .grid-item {
+                height: 260px;
+                width: 100%;
+                padding: 50px;
+                background-image: url("../../../public/images/dashboard-bg.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                @include media("<=phoneH") {}
+            }
+        }
+    }
+}

@@ -1,0 +1,247 @@
+.lading-page {
+  width: 100%;
+  height: 100%;
+
+  .wrap {}
+}
+
+.shadow-dot {
+  background: rgba(245, 217, 58, 0.5);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.hero-section {
+  padding: 120px 0;
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+
+  .shadow-dot {
+    width: 280px;
+    height: 280px;
+    left: -100px;
+    top: -100px;
+    -webkit-filter: blur(160px);
+    filter: blur(160px);
+  }
+
+  .btn-buy {
+    height: 60px;
+    width: 250px;
+    background-image: url("../../../public/images/btn-border.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include anim;
+
+    &:hover {
+      background-image: url("../../../public/images/btn-border-hover.webp");
+
+      label {
+        color: #000;
+      }
+
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}
+
+.banner-section {
+  .wrap {
+    .banner-image {
+      height: 460px;
+      width: 100%;
+      background-color: $themeColor;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @include media("<=phoneH") {
+        height: 180px;
+      }
+    }
+
+    .swiper-slide {
+      background-color: #0e0f14 !important;
+    }
+
+    .swiper {
+      height: 500px;
+      background: #0e0f14 !important;
+      background-color: #0e0f14 !important;
+
+      @include media("<=phoneH") {
+        height: 240px;
+      }
+
+      .swiper-pagination {
+        bottom: 0px !important;
+        background-color: #0e0f14 !important;
+
+        .swiper-pagination-bullet {
+          background: $themeColor !important;
+
+          &.swiper-pagination-bullet-active {
+            background: $themeColor !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-section {
+  .wrap {
+    .btn-connect {
+      height: 55px;
+      width: 210px;
+      background-image: url("../../../public/images/btn-border.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @include anim;
+
+      &:hover {
+        background-image: url("../../../public/images/btn-border-hover-2.png");
+
+        label {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.overview-section {
+  min-height: 550px;
+  width: 100%;
+  background-image: url("../../../public/images/overview-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.road-map-section {
+  .wrap {
+    .map-grid {
+
+      // margin: 0 150px;
+      // height: 300px;
+      .map-item {
+        height: 450px;
+        width: 100%;
+        background-image: url("../../../public/images/raodmap-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include media("<=phoneH") {
+          height: 560px;
+        }
+      }
+    }
+  }
+}
+
+.team-section {
+  min-height: 550px;
+  width: 100%;
+  background-image: url("../../../public/images/team-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.how-to-buy {
+  .wrap {
+    .left-side {}
+
+    .btn-buy {
+      height: 40px;
+      width: 180px;
+      background-image: url("../../../public/images/btn-border.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @include anim;
+
+      &:hover {
+        background-image: url("../../../public/images/btn-border-hover.webp");
+
+        label {
+          color: #000;
+        }
+
+        svg {
+          path {
+            fill: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-submit {
+  height: 50px;
+  width: 200px;
+  background-image: url("../../../public/images/btn-border.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../../../public/images/btn-border-hover-2.png");
+
+    label {
+      color: #000;
+    }
+  }
+}
+
+.btn-submit-w {
+  height: 50px;
+  width: 200px;
+  background-image: url("../../../public/images/btn-border-w.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.airdrop-section {}
+
+.join-us-section {
+  height: 650px;
+  width: 100%;
+  background-image: url("../../../public/images/joinus.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #15171d;
+
+  @include media("<=phoneH") {
+    height: 300px;
+  }
+
+  .btn-join {
+    height: 50px;
+    width: 200px;
+    background-image: url("../../../public/images/btn-border.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      background-image: url("../../../public/images/btn-border-hover-2.png");
+
+      label {
+        color: #000;
+      }
+    }
+  }
+}

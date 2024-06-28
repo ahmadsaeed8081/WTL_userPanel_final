@@ -1,0 +1,29 @@
+// Header
+.header-camp {
+  .wrap {
+    .left {
+      .logo-img {
+        .logo {
+          height: 80px;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      .menu-list {
+        .menu-item {
+          cursor: pointer;
+          @include anim;
+        }
+      }
+      .btn-connect {
+        height: 60px;
+        width: 210px;
+        background-image: url("../../../public/images/btn-border.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
