@@ -4,10 +4,10 @@ const About = () => {
   return (
     <div id="aboutus" className="about-section flex flex-col pb-20">
       <div className="wrap wrapWidth flex items-center gap-8 sm:flex-row flex-col">
-        <div className="flex items-center justify-end flex-1">
+        <div className="flex items-center justify-center flex-1">
           <img src="./images/about-bg.png" className="h-[340px]" />
         </div>
-        <div className="flex flex-1 flex-col gap-5 sm:items-start items-center">
+        <div className="flex flex-1 flex-col gap-5 sm:items-start items-center ">
           <h1 className="text-white font-normal text-2xl sm:text-start text-center">
             Trade Smarter, Trade Better with
             <span className="text-themeColor"> WTL!</span>

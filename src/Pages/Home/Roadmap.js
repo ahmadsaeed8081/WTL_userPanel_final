@@ -50,6 +50,14 @@ const Roadmap = () => {
                 <PhaseIcon2 />
               </div>
               <div className="flex flex-col w-full sm:gap-1 gap-4">
+                {/* <ul>
+                  <li>
+                  Private Sale
+                  </li>
+                  <li>
+                  WTL SWAP Launch
+                  </li>
+                </ul> */}
                 <p className="text-black font-pop sm:text-sm text-xl leading-5">
                   1) Private Sale
                 </p>

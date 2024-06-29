@@ -26,7 +26,7 @@ const Banner = () => {
     <div className="banner-section flex py-20">
       <div className="wrap wrapWidth flex flex-col gap-12">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="text-themeColor md:text-2xl text-xl md:text-start text-center">
+          <h1 className="text-white md:text-2xl text-xl md:text-start text-center">
             ANNOUNCEMENT
           </h1>
           <img src="./images/separator.svg" alt="separator" className="w-20" />
